@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -15,6 +16,13 @@ header > div{
     display: flex;
     align-items: end;
     margin-left: 12.5%;
+    max-width: 50%;
+    margin-right: 55%;
+    /* font-size:  1vw; */
+}
+
+hgroup{
+    /* max-height: 90%; */
 }
 
 .contacts{
@@ -36,7 +44,7 @@ dt{
 }
 
 dd{
-    margin-left: 110px;
+    margin-left: 125px;
     background-color: black;
     width: -webkit-fill-available;
     padding-left: 5px;
@@ -60,7 +68,7 @@ dd > a{
 
 #contact{
     position: absolute;
-    top: -140px;
+    top: -16%;
     left: 50vw;
     /* width: -webkit-fill-available; */
     width: 800px;
@@ -81,6 +89,11 @@ h3::before{
     display: inline-block;
     margin-right: 2px;
 }
+
+#about p{ padding-right: 20px;}
+#experiences p{ padding-right: 20px;}
+
+
 
 
 #about{
@@ -117,9 +130,9 @@ h3{
 
 
 .skill{
-    background: #a1a1a1;
+    background: lightgray;
     margin-bottom: 2px;
-    padding: 2px 0px;
+    padding: 5px 0px;
     color: white;
     overflow: hidden;
 
@@ -127,6 +140,65 @@ h3{
 
 .skill span{
     background: red;
-    padding-right: 80%;
+    margin-left: 5px;
+    padding-left: 2px;
+    display: block;
 }
 
+.skills-secondary span{
+    opacity: 0.8;
+}
+
+[data-skill="1"] span{
+    width: 10%;
+}
+
+[data-skill="3"] span{
+    width: 30%;
+}
+
+[data-skill="5"] span{
+    width: 50%;
+}
+
+[data-skill="7"] span{
+    width: 70%;
+}
+
+[data-skill="9"] span{
+    width: 90%;
+}
+
+.experience-type{
+ color: red;
+}
+
+.experience-institution{
+    font-weight: normal;
+    color: red;
+}
+
+.experience-institution::before{
+    content: "@ ";
+}
+
+.experience-location::before{
+    content: "In ";
+}
+
+.experience-location::after{
+    content: "on ";
+}
+
+h4{
+    margin-bottom: 0px;
+}
+
+.experience-details{
+    margin-left: 10px;
+    color:  darkgray;
+}
+
+.experience-date-separator{
+    color: red;
+}
