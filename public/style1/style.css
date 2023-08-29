@@ -21,10 +21,9 @@ header > div{
     /* font-size:  1vw; */
 }
 
-hgroup{
-    /* max-height: 90%; */
-}
-
+.contacts:nth-child(2) dd{
+    color: black;
+  }
 .contacts{
     background: red;
     display: flex;
@@ -116,7 +115,7 @@ h3::before{
 }
 
 h3{
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid lightgray;
 }
 
 
@@ -201,4 +200,49 @@ h4{
 
 .experience-date-separator{
     color: red;
+}
+
+
+@media (max-width: 450px){
+
+.content{
+    display: block;
+}
+
+#contact{
+    position: initial;
+    width: auto;
+}
+
+dd{
+    background-color: white;
+}
+
+#contact h3 {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contacts{
+    margin-top: 30px;
+}
+
+header{
+    margin-bottom: 50px;
+}
+
+header > div {
+    flex-direction: column;
+}
+
+h1, h2{
+    width: max-content;
+}
+
+
+/* checked on CanIUse.com ... good enough support from most browsers (96% of internet users worldwide)*/
+hgroup{
+    width: -webkit-fill-available;
+}
+
 }
