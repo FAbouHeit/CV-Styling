@@ -265,3 +265,105 @@ h3{
     color: rgba(0, 0, 0, 0);
 }
 
+
+
+@media (max-width: 450px){
+    header div figure{
+        display: none;
+    }
+
+    #about p{
+        width: 90%;
+        /* text-align: center; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #competencies h3{
+        border-right: 0px;
+        border-bottom: 1px solid black;
+    }
+    #competencies{
+        grid-template-areas:
+        'one'
+        'two'
+        'three';
+        grid-template-columns: auto;
+        /* grid-template-rows: 200px auto auto; */
+    }
+    .skill{
+        width: 30%;
+    }
+
+    #competencies .skills-primary, #competencies .skills-secondary{
+        margin-left: 0;
+    }
+
+
+    #experiences h3{
+        border-right: 0px;
+        border-bottom: 1px solid black;
+    }
+
+    #experiences{
+    grid-template-columns: initial;
+    grid-template-areas:
+        'four'
+        'five'
+        'six';
+    }
+
+    .experience{
+        margin-left: 0;
+    }
+
+    #education{
+        grid-template-columns: auto;
+        grid-template-areas:
+            'seven'
+            'eight'
+            'nine';
+    }
+
+    #education h3{
+        border-right: 0px;
+        border-bottom: 1px solid black;
+    }
+
+    #hobbies{
+        grid-template-columns: auto;
+    grid-template-areas:
+        'ten'
+        'eleven';
+    }
+
+    #hobbies h3{
+        border-right: 0px;
+        border-bottom: 1px solid black; 
+    }
+
+    h4 span, .experience-details{
+        font-size: 0.9em;
+    }
+
+    .contacts{
+        display: grid;
+        grid-template-areas: 
+        'twelve fifteen fourteen'
+        'thirteen . .';
+    }
+
+    .contact-email{
+        grid-area: twelve;
+    }
+    .contact-facebook{
+        grid-area: thirteen;
+    }
+    .contact-github{
+        grid-area: fourteen;
+    }
+    .contact-phone{
+        grid-area: fifteen;
+    }
+    /* .contact-skype{} */
+}
