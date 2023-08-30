@@ -21,6 +21,12 @@ header > div{
     /* font-size:  1vw; */
 }
 
+header figure img{
+    max-width: 110px;
+    max-height: 110px;
+}
+
+
 .contacts:nth-child(2) dd{
     color: black;
   }

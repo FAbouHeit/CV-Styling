@@ -24,6 +24,12 @@ header figure{
     position: absolute;
     top: 30%;
     left: 75%;
+
+}
+
+header figure img{
+    max-width: 110px;
+    max-height: 110px;
 }
 
 h2{
@@ -267,7 +273,7 @@ h3{
 
 
 
-@media (max-width: 450px){
+@media (max-width: 600px){
     header div figure{
         display: none;
     }
